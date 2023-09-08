@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom'
+import Card from "../component/Card"
 
 export default function Agents() {
     const [info, setInfo] = useState([])
@@ -12,15 +13,13 @@ export default function Agents() {
     }, [])
 
     const agentCard = info.map((agent) => {
+        if (agent.isPlayableCharacter === true) {
         return (
             <Link className="link-agents" to= {`/agents/${agent.uuid}`}>
-                <div className='each-agent' key={agent.uuid}>
-                    <h1>{agent.displayName}</h1>
-                    <img style={{width: "220px", height: "200px"}} src={agent.fullPortrait} alt={agent.displayName} />
-                    <p>{agent.description}</p>
-                </div>
+                <Card id={agent.uuid} name={agent.displayName} pic={agent.fullPortrait} story={agent.description}/>
             </Link>
         )
+        }
     })
 
     return (

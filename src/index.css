@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: VALORANT;
+  src: url('/Users/suyog/Desktop/Valo-hub/Valorant Font.ttf')
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -35,21 +40,66 @@ code {
   margin-right: 100px;
 }
 
+
+
+
 .agent-card {
   display: grid;
-  column-gap: 20px;
-  row-gap: 20px;
-  grid-template-columns: auto auto auto auto auto;
-  padding: 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: rgb(243, 228, 209);
+  
+}
+
+.each-agent-nothovered {
+  /* border: #497ec2 1px solid; */
+  border-radius: 10px;
+  transition: 0.7s;
 }
 
 .each-agent {
-  border: #c272c2 3px solid;
-  border-radius: 20px;
-  padding: 10px;
+  border-radius: 25px;
+  background-color: #fe5d6d;
+  transition: 0.7s;
+  width:332px;
+  height: 302px;
 }
 
+/* .each-agent:hover {
+  background-color: #fd4557;
+  transition: 0.7s;
+} */
+
 .link-agents {
-  text-decoration: none;
-  color: black;
+  width:330px;
+  height: 300px;
+} 
+
+.agent-img {
+  width: auto;
+  height: auto;
+  border-radius: 10px;
 }
+
+.agent-text {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  text-align: center;
+}
+
+.agent-name {
+  font-family: VALORANT, sans-serif;
+  font-size: xx-large;
+  color: #fffbf5;
+  padding: 0.5rem;
+}
+
+.agent-info {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: large;
+  color: #fffbf5;
+  font-weight: 300;
+}
+
