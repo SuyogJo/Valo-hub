@@ -103,3 +103,71 @@ code {
   font-weight: 300;
 }
 
+.agent-detail {
+  background-color: rgb(243, 228, 209);
+}
+
+.agent-longcard {
+  display: flex;
+  flex-direction: row;
+  gap: 2.5rem;
+  padding: 2rem;
+  /* height: 100vh; */
+}
+
+.backdrop {
+  background-color: rgb(243, 228, 209);
+}
+
+.x {
+  flex-basis: 100%;
+  text-align: center;
+  border: 1px solid black;
+  align-items: center;
+  border-radius: 25px;
+  background-color: #fe5d6d;
+  transition: 0.7s;
+  width:332px;
+  height: 502px;
+}
+
+.ability-title {
+  font-size: xx-large;
+  color: #fffbf5;
+  padding: 2rem;
+  font-family: VALORANT, sans-serif;
+}
+
+.ability-image {
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ability-description {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding: 30px;
+  font-size: large;
+  color: #fffbf5;
+  font-weight: 300;
+}
+
+.audio{
+}
+
+.audio-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.audio-text {
+  margin-top: auto;
+  margin-bottom: auto;
+  font-family: VALORANT, sans-serif;
+  font-size: xx-large;
+  color: #fe5d6d;
+}
