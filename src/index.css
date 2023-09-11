@@ -22,15 +22,20 @@ code {
 }
 
 .header {
-  background-color: #1568bb;
+  background-color: #000000;
   height: 110px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding-block: 10px;
 }
 
 .title-logo {
   margin-right: 100px;
+  font-family: VALORANT, sans-serif;
+  font-size: xx-large;
+  color: #fd4556;
+  padding: 40px;
 }
 
 .navbar {
@@ -38,6 +43,17 @@ code {
   align-items: center;
   justify-content: space-between;
   margin-right: 100px;
+}
+
+.home-text {
+  color: #fd4556;
+  font-family: VALORANT, sans-serif;
+  margin-right: 30px;
+}
+
+.agents-text {
+  color: #fd4556;
+  font-family: VALORANT, sans-serif;
 }
 
 
@@ -160,12 +176,12 @@ code {
 .audio-div {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding-top: 30px;
+  align-items: center;
+  padding: 30px;
+  padding-bottom: 0;
 }
 
 .audio-text {
-  margin-top: auto;
   margin-bottom: auto;
   font-family: VALORANT, sans-serif;
   font-size: xx-large;

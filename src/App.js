@@ -11,8 +11,8 @@ function App() {
         <header className="header">
           <h1 className='title-logo'>Valorant Hub</h1>
           <nav className="navbar">
-            <Link to="/">Home</Link>
-            <Link to="/agents">Agents</Link>
+            <Link to="/"><h1 className="home-text">Home</h1></Link>
+            <Link to="/agents"><h1 className="agents-text">Agents</h1></Link>
           </nav>
         </header>
         <Routes>

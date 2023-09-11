@@ -17,7 +17,11 @@ export default function AgentDetails() {
     }, [])
 
     const au = generalObject.map(obj => (
-        <div className="audio-div"><h1 className='audio-text'>Agent Audio Sound</h1><audio className="audio" controls> <source src={obj.wave} type="audio/wav"></source> doesnt support audio fam </audio></div>
+        <div className="audio-div">
+            <h1 className='audio-text'>Agent Audio Sound</h1>
+            <audio className="audio" controls> <source src={obj.wave} type="audio/wav"></source> doesnt support audio fam 
+            </audio>
+        </div>
     ));
 
     const ab = extraInfo.map(obj => (
